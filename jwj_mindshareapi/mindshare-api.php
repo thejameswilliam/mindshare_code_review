@@ -153,15 +153,19 @@ $post_count = 0;
 						echo $output; //put the post on the page
 						$post_count++; //add to our post count
 					
+					// throw an error if there are no posts in that category
+					} else {// throw an error on the page if there are no posts in that category
+						echo 'That category doesnt seem to exist.';
+						break;
 					}; //end if category exists in shortcode
 					
-					
-			}; //end if $max_posts > $post_count
-			
+			// if the user wants 0 posts, then we should do nothing.	
+				} elseif($max_posts <= 0) {
+					echo 'Silence is golden.';
+					break;
+				}; //end if $max_posts > $post_count
+				
 		}; //end our foreach loop for the $ms_posts
 	
-} //end of function
-
-
-
+} //end of shortcode function
 ?>
