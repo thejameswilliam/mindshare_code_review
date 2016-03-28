@@ -1,9 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@media only screen and (min-width:320px) {
+
 .jwj_title {
 	font-family: 'Lobster', cursive;
 	font-size:1.6em;
+	text-align:center;
 	
 	
 }
@@ -45,8 +48,8 @@
 .jwj_image {
 	float:left;
 	height:auto;
-	max-width:30%;
-	margin:1.5%;
+	max-width:100%;
+	margin:2.5%;
 	
 }
 
@@ -62,4 +65,74 @@
 }
 .jwj_clear {
 	clear:both
+}
+
+
+
+
+}
+
+
+
+
+@media only screen and (min-width:768px) {
+.jwj_image {
+	float:left;
+	height:auto;
+	max-width:50%;
+	margin:2.5%;
+	
+}
+
+.jwj_image img {
+	width:100%;
+	height:auto;	
+}
+	
+	
+	
+}
+
+
+@media only screen and (min-width:1024px) {
+.jwj_title {
+	
+	text-align:left;
+	
+	
+}
+.jwj_categories {
+
+}
+.jwj_category {
+	
+	
+	
+	
+}
+.jwj_category:hover {
+	
+}
+.jwj_image {
+	float:left;
+	height:auto;
+	max-width:30%;
+	margin:1.5%;
+	
+}
+
+.jwj_image img {
+	width:30%;
+	height:auto;	
+}
+
+.jwj_excerpt {
+	width:100%;
+	padding:10px;
+	margin-left:1.5%;	
+}
+.jwj_clear {
+	clear:both
+}
+
 }
