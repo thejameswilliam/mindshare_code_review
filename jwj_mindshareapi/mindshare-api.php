@@ -102,6 +102,7 @@ $post_count = 0;
 						$categories = $ms_post->terms->category;
 						$title = $ms_post->title; 
 						$link = $ms_post->link; 
+						$excerpt = $ms_post->excerpt;
 						//We could get as much post information as we'd like, but we'll stick to just this.
 						//I'm making these simple to read varables to make the code easier to write and understand.
 						
@@ -153,8 +154,8 @@ $post_count = 0;
 						$post_count++; //add to our post count
 					
 					// throw an error if there are no posts in that category
-					} else {// throw an error on the page if there are no posts in that category
-						echo 'That category doesnt seem to exist.';
+					} else {
+						echo "That category doesn't seem to exist.";
 						break;
 					}; //end if category exists in shortcode
 					
@@ -166,5 +167,8 @@ $post_count = 0;
 				
 		}; //end our foreach loop for the $ms_posts
 	
-} //end of shortcode function
+} //end of function
+
+
+
 ?>
